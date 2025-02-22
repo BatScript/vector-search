@@ -14,3 +14,5 @@ Make sure you have :
 `bin/install`
 ### Running Server
 `bin/run dev`
+
+API Docs will be availble at http://localhost:8000/docs
