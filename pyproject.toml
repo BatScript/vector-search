@@ -1,0 +1,24 @@
+[project]
+name = "vector-search"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard] (>=0.115.8,<0.116.0)",
+    "faker (>=36.1.1,<37.0.0)",
+    "pymongo (>=4.11.1,<5.0.0)",
+    "sentence-transformers (>=3.4.1,<4.0.0)",
+    "motor (>=3.7.0,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "vector_search", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
